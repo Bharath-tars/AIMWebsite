@@ -614,7 +614,7 @@ body.light .logo {
 .work-box {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
 }
 
 @media (max-width: 1045px) {
@@ -626,6 +626,7 @@ body.light .logo {
   .work-box {
     flex-direction: column-reverse;
     align-items: flex-start;
+    
   }
 
   .work-img {
@@ -658,7 +659,7 @@ body.light .work-img {
 }
 
 .work-textbox {
-  max-inline-size: 600px;
+  max-inline-size: 900px;
 }
 .work h2 {
   margin-block-start: 130px;
@@ -669,9 +670,13 @@ body.light .work-img {
   }
 }
 
-@media (max-width: 485px) {
+@media (max-width: 400px) {
   .work h2 {
     margin-block-start: 120px;
+  }
+  .header-btns
+  {
+    width:100%;
   }
 }
 
