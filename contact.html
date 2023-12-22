@@ -103,7 +103,7 @@
                 loading="lazy"
               />
             </div>
-            <form action="#" class="contact-form" netlify>
+            <form id="aimform" class="contact-form">
               <div class="form-field">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" required />
@@ -126,8 +126,22 @@
                 <label for="message">How are you willing to contribute??</label>
                 <textarea name="message" id="message" required></textarea>
               </div>
-              <button type="submit" class="btn btn-cta">Send</button>
+              <button type="submit" onclick="sendEmail()"class="btn btn-cta">Send</button>
             </form>
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script>
+              emailjs.init('mSyeqa9N5Xy71iiNV');
+              function sendEmail() {
+                  emailjs.sendForm('service_occ1xzj', 'template_2gl68h6', '#aimform', 'mSyeqa9N5Xy71iiNV')
+                      .then(function(response) {
+                          console.log('SUCCESS!', response.status, response.text);
+                          alert('Email sent successfully!');
+                      }, function(error) {
+                          console.log('FAILED...', error);
+                          alert('Email sending failed. Please try again later.');
+                      });
+              }
+          </script>
           </div>
         </div>
       </section>
