@@ -381,6 +381,7 @@ main {
   transform: translateY(calc(-1 * var(--radius)));
 }
 
+
 @media (max-width: 1185px) {
   :root {
     --radius: 45px;
@@ -515,6 +516,10 @@ body.dark .header {
   display: inline-flex;
   gap: var(--gutter-x-small);
 }
+.header-btnsa {
+  display: inline-flex;
+  gap: var(--gutter-x-small);
+}
 
 @media (max-width: 400px) {
   .header-textbox {
@@ -526,7 +531,7 @@ body.dark .header {
     background-image:linear-gradient(#00000030, #000000a3),
       url("assets/images/aim400.png");
   }
-  .header-btns {
+  .header-btnsa {
     flex-direction: column;
     width:40%;
   }
