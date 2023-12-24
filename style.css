@@ -532,10 +532,15 @@ body.dark .header {
 }
 @media (max-width: 400px) {
   .logo-container {
-    display: none;
-    top: 0px; /* Adjust the top margin as needed */
-    left: 0px;
+    top: 4px; /* Adjust the top margin as needed */
+    left: 30px;
   }
+  .logobrand {
+    margin-right: 500px; /* Adjust the margin between logos as needed */
+    filter: brightness(0.8); /* Adjust the brightness as needed */
+    max-width: 110px; /* Adjust the maximum width of logos as needed */
+    height: auto;
+}
 }
 @media (max-width: 1200px) {
   .header-text {
@@ -566,7 +571,7 @@ body.dark .header {
   }
   body.dark .header {
     background-image:linear-gradient(#00000030, #000000a3),
-      url("assets/images/aim400.png");
+      url("assets/images/doom400px.png");
   }
   .header-btnsa {
     flex-direction: column;
