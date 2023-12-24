@@ -482,8 +482,8 @@ main {
 }
 
 body.dark .header {
-  background-image: linear-gradient(#00000050, #000000a3),
-    url("assets/images/mainhome4.png");
+  background-image: linear-gradient(#00000066, #000000a3),
+    url("assets/images/temp/homeai.jpg");
 }
 
 .header-textbox {
@@ -499,7 +499,44 @@ body.dark .header {
   margin-block-start: var(--gutter-micro);
   margin-block-end: var(--gutter-medium);
 }
+.logo-container {
+  position: absolute;
+  top: 20px; /* Adjust the top margin as needed */
+  left: 110px; /* Adjust the left margin as needed */
+  display: flex;
+  align-items: center;
+}
 
+.logobrand {
+  margin-right: 60px; /* Adjust the margin between logos as needed */
+  filter: brightness(0.8); /* Adjust the brightness as needed */
+  max-width: 130px; /* Adjust the maximum width of logos as needed */
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .logo-container {
+    top: 20px; /* Adjust the top margin as needed */
+    left: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .logo-container {
+    top: 20px; /* Adjust the top margin as needed */
+    left: 40px;
+  }
+  .logobrand {
+    margin-right: 30px; /* Adjust the margin between logos as needed */
+    max-width: 90px; /* Adjust the maximum width of logos as needed */
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .logo-container {
+    display: none;
+    top: 0px; /* Adjust the top margin as needed */
+    left: 0px;
+  }
+}
 @media (max-width: 1200px) {
   .header-text {
     max-inline-size: 685px;
