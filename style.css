@@ -530,7 +530,7 @@ body.dark .header {
     height: auto;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .logo-container {
     top: 4px; /* Adjust the top margin as needed */
     left: 30px;
@@ -563,7 +563,7 @@ body.dark .header {
   gap: var(--gutter-x-small);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .header-textbox {
     left: 0;
     text-align: center;
