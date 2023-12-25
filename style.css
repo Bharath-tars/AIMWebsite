@@ -532,14 +532,9 @@ body.dark .header {
 }
 @media (max-width: 400px) {
   .logo-container {
-    top: 4px; /* Adjust the top margin as needed */
-    left: 30px;
-  }
-  .logobrand {
-    margin-right: 500px; /* Adjust the margin between logos as needed */
-    filter: brightness(0.8); /* Adjust the brightness as needed */
-    max-width: 110px; /* Adjust the maximum width of logos as needed */
-    height: auto;
+    top: 0px; /* Adjust the top margin as needed */
+    left: 0px;
+    display: none;
 }
 }
 @media (max-width: 1200px) {
